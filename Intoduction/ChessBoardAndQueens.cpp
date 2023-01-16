@@ -20,14 +20,14 @@ int main(){
         }
         vector<bool> diagonaloccupied(15,false);
         for(int i =0 ; i < 8 ; i++){
-            if(diagonaloccupied[i+column[i]]) valid = false ;
+            if(diagonaloccupied[i+column[i]]) valid = false ; //Anti diagonals
             diagonaloccupied[i+column[i]] = true ;
         }
         for(int i =0 ; i < 15 ; i++){
             diagonaloccupied[i+column[i]] = false ;
         }
         for(int i =0 ; i < 8 ; i++){
-            if(diagonaloccupied[i+7-column[i]]) valid = false ;
+            if(diagonaloccupied[i+7-column[i]]) valid = false ; //main diagonals
             diagonaloccupied[i+7-column[i]] = true ;
         }
         count+= valid;
