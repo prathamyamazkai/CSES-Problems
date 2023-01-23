@@ -21,7 +21,7 @@ int main(){
         customer_price.push_back(customer);
     }
 
-    multiset<int,greater<int>>s;
+    multiset<int,greater<int>>s; //sorts set high to low and returns 1st iterator less than the lowerbound 
     for(int i=0 ; i<n ; i++){
         s.insert(ticket_price[i]);
     }
