@@ -21,6 +21,5 @@ int main(){
         ans = max(ans,sum);
     }
     cout<<ans<<"\n";
-    
     return 0;
 }
