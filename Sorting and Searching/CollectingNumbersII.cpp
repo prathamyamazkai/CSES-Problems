@@ -13,7 +13,7 @@ signed main(){
   for(int i=1;i<n;i++)
     ans+=b[i]<b[i-1] ;
   set<ar<int,2>> c ; // array will hold 2 integers
-  auto add = [&](int i){ // lambada function '&' represents capturing value bt refrence hence modifiable 
+  auto add = [&](int i){ // lambda function '&' represents capturing value by refrence hence modifiable 
     if(a[i]>0)
       c.insert({a[i]-1,a[i]}) ;
     if(a[i]<n-1)
@@ -21,7 +21,7 @@ signed main(){
   } ;
   while(m--){
     int i,j ; cin >> i >> j ;--i;--j ; //positions to swap decrement to make it 0-based index
-    add(i);  add(j) ;
+    add(i);  add(j) ;//Capturing variable from surrounding scope by using lambda function 
     for(ar<int,2> x:c)
       ans-=b[x[1]]<b[x[0]] ; 
     swap(a[i],a[j]) ;swap(b[a[i]],b[a[j]]) ;
