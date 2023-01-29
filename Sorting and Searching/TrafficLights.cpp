@@ -1,3 +1,6 @@
+
+//Inserting a traffic light in a street breaks the street into 2 parts
+
 #include <bits/stdc++.h>
 using namespace std ;
 
