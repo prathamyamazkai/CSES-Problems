@@ -1,4 +1,4 @@
-//NOT working has errors : Incomplete
+//Working 
 #include <bits/stdc++.h>
 using namespace std ;
 
@@ -32,7 +32,10 @@ int main(){
             op.push_back(ans[i]);
         }
     }
-    cout<< *max_element(a,a+n)<<"\n";
+    cout<< *max_element(ans,ans+n)<<"\n";
+    for(int i=0 ; i<n ; i++){
+        cout<<ans[i]<<" ";
+    }
 
     return 0;
 }
