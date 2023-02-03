@@ -39,3 +39,13 @@ int main(){
 
     return 0;
 }
+
+//interval overlap tracker code
+
+/*
+vector of tuples contains 3 integers
+start , end & flag
+flag => 0 (starting) interval
+flag => 1 (ending) interval
+
+*/
